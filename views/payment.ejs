@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="styles.css">
+  <title>Payment Checkout</title>
+</head>
+
+<body>
+  <div id="whole">
+    <nav>
+        <h1>Enter Payment Information</h1>
+    </nav>
+  
+    <div class='container'>
+      <div class="left">
+        Name:<br><br>
+        Email:<br><br>
+        Card Number:<br><br>
+        Amount:<br><br>
+  
+      </div>
+      <div class="right">
+	<form method="POST" action='/purchase'>
+       <input type="text" name="name" required>
+        <br>
+        <input type="text" name="email" required>
+        <br>
+         <input type="text" name="cardnumber" required>
+        <br>
+	<br>
+         <input type="text" name="amount" required>
+        <br>
+        <input type="submit" value="Submit">
+    </form>
+        
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>
